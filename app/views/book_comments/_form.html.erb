@@ -1,0 +1,8 @@
+        <div>
+        <!--コメント投稿エリア-->
+        <%= form_with model:[book, book_comment] ,remote:true do |f| %>
+          <%= f.text_area :comment,size:"100x6" %>
+          <!-- rows:'5' -->
+          <p><%= f.submit "送信" %></p>
+        <% end %>
+        </div>
